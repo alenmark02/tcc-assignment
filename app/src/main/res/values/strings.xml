@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Finch Station</string>
+    <!--  Prefs Name  -->
+    <string name="prefs">com.rrhi.your.package.name</string>
+    <string name="str_routes_lbl">Routes</string>
+    <string name="str_destination_lbl">Destination</string>
+    <string name="str_departure_time_lbl">Departure Time</string>
+</resources>

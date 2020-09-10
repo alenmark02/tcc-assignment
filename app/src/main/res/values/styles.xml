@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme For Activities w/o action bar or Customized Action Bar  -->
+    <style name="NoActionBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--        <item name="android:statusBarColor">@color/white</item>-->
+        <!--<item name="android:windowBackground">@layout/activity_splash</item>-->
+
+    </style>
+    <!--  For App Bar Style when Navigation Drawer is Opened  -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!--  For App Bar Style when Navigation Drawer is Closed  -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--  For Custom Dialog -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+        <!--<item name="android:windowBackground">@drawable/b</item>-->
+    </style>
+
+    <!-- Dialog Theme Negative Button Style -->
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+    <!-- Dialog Theme Positive Button Style -->
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+    <!-- Dialog Theme Neutral Button Style -->
+    <style name="NeutralButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <!--  Style For Bottom Navigation  -->
+    <style name="CustomBottomNavStyle">
+        <item name="itemIconTint">@color/nav_item_state_list</item>
+        <item name="itemTextColor">@color/nav_item_state_list</item>
+        <item name="android:background">@color/white</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <!--  Style For Button  -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">17sp</item>
+        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--  TextInputLayout Filled Box  -->
+    <style name="TextInputLayoutFilledBoxStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCollapsedPaddingTop">5dp</item>
+        <item name="android:textColorHint">@color/grayish_white</item>
+        <item name="boxBackgroundColor">#FFFF</item>
+        <item name="boxStrokeColor">@android:color/transparent</item>
+        <item name="android:radius">10dp</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <!--        <item name="android:background">@drawable/textfield_background</item>-->
+
+
+    </style>
+
+
+    <!--  TextInputLayout Outlined Box  -->
+    <style name="TextInputLayoutOutlinedBoxStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCollapsedPaddingTop">5dp</item>
+        <item name="android:textColorHint">@color/grayish_white</item>
+        <item name="boxBackgroundColor">#FFFF</item>
+        <item name="boxStrokeColor">@android:color/transparent</item>
+        <item name="android:radius">10dp</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <!--        <item name="android:background">@drawable/textfield_background</item>-->
+    </style>
+
+
+    <!--  CardView Custom Style  -->
+    <style name="CardViewCustomStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardElevation">10dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardBackgroundColor">@color/white</item>
+
+    </style>
+
+
+    <!--  Style for Loading Dialog  -->
+    <style name="LoadingDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+</resources>
